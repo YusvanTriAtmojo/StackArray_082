@@ -56,7 +56,39 @@ public:
 int main() 
 {
 	StackArray data;
-	char ch;
-	int element;
+	char pilih;
 
+	while (true) {
+		cout << endl << "Menu";
+		cout << endl << "1. Menambahkan data\n" << endl;
+		cout << "2. Menghapus data\n" << endl;
+		cout << "3. Menampilkan data\n" << endl;
+		cout << "4. EXIT\n" << endl;
+		cout << endl << "Masukkan pilihan : ";
+		cin >> pilih;
+
+		switch (pilih)
+		{
+		case '1': {
+			data.push();
+			break;
+		}
+		case '2':
+			if (data.empty()) {
+				cout << "\nStack is empty." << endl;
+				break;
+		}
+			data.pop();
+			break;
+		case '3': 
+			data.display();
+			break;
+		case '4': 
+			return 0;
+		default:
+			cout << "\nInvalid choice." << endl;
+			break;
+		}
+	}
+}
 	
