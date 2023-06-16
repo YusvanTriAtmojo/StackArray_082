@@ -15,6 +15,8 @@ public:
 
 	void push() {
 		int element;
+		cout << "Masukkan element: ";
+		cin >> element;
 		if (top == 4) {
 			cout << "Number of data exceed the Limit" << endl;
 			return;
@@ -59,12 +61,13 @@ int main()
 	char pilih;
 
 	while (true) {
-		cout << endl << "Menu";
-		cout << endl << "1. Menambahkan data\n" << endl;
-		cout << "2. Menghapus data\n" << endl;
-		cout << "3. Menampilkan data\n" << endl;
-		cout << "4. EXIT\n" << endl;
-		cout << endl << "Masukkan pilihan : ";
+		cout << endl;
+		cout << "\n**Menu**\n";
+		cout << "1. Menambahkan data\n";
+		cout << "2. Menghapus data\n";
+		cout << "3. Menampilkan data\n";
+		cout << "4. EXIT\n";
+		cout << "Masukkan pilihan : ";
 		cin >> pilih;
 
 		switch (pilih)
